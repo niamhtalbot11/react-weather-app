@@ -1,0 +1,11 @@
+.container {
+background-color:blueviolet;
+max-width:50%;
+margin:auto;
+height:400px;
+
+}
+
+h1 {
+    text-align: center;
+}
