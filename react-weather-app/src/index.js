@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+import SearchEngine from "./searchEngine";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+
+
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
+    <div className="App">
+      <h1>Weather App</h1>
+      <SearchEngine />
+      <br />
+      <div class="temperature"></div>
+      <div class="description"></div>
+      <div class="humidity"></div>
+      <div class="windSpeed"></div>
+      <img src="" alt="" id="icon" />
+    </div>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
