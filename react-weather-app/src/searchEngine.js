@@ -42,8 +42,8 @@ export default function SearchEngine() {
   return (
     <form onSubmit={Search}>
       <div className="mb-3">
-      <input type="text"  placeholder="Enter a city" id="searchEngine"/>
-      <input type="submit" value="search" />
+      <input type="text"  placeholder="Enter a city..." id="searchEngine"/>
+      <input type="submit" value="Search" id="searchButton" />
       </div> 
     </form>
   );
