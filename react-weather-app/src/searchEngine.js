@@ -1,5 +1,8 @@
-import React from "react";
+import React  from "react";
 import axios from "axios";
+import Form from 'react-bootstrap/Form';
+
+
 
 export default function SearchEngine() {
   function showTemperature(response) {
@@ -34,10 +37,16 @@ export default function SearchEngine() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8ca7dd4e61360b90fb66918853670e48&units=metric`;
     axios.get(url).then(showTemperature);
   }
+  searchFunction("Chiang Mai");
+
   return (
     <form onSubmit={Search}>
-      <input type="text" placeholder="Enter a city" id="searchEngine" />
+      <div className="mb-3">
+      <input type="text"  placeholder="Enter a city" id="searchEngine"/>
       <input type="submit" value="search" />
+      </div> 
     </form>
   );
+
 }
+
