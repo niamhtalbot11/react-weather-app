@@ -1,11 +1,12 @@
 import React  from "react";
 import axios from "axios";
-import Form from 'react-bootstrap/Form';
+
 
 
 
 export default function SearchEngine() {
   function showTemperature(response) {
+    document.querySelector(".city").innerHTML = response.data.name;
     let temperature = Math.round(response.data.main.temp);
     document.querySelector(
       ".temperature"
@@ -25,7 +26,7 @@ export default function SearchEngine() {
       "src",
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-  }
+    }
 
   function Search(event) {
     event.preventDefault();
