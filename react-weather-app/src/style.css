@@ -1,13 +1,21 @@
-.App {
 
+.App {
 max-width:50%;
 margin:auto;
-height:400px;
-
+height:800px;
+max-width:600px;
 }
 
 h1 {
     text-align: center;
+}
+
+.weatherDetail {
+    color: #878787;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    padding:5px;
 }
 
 .city {
@@ -21,6 +29,7 @@ input#searchEngine {
     width:400px;
     height:40px;
     margin:15px;
+    margin-left:60px;
     border-radius: 5px;
     border:none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
@@ -37,4 +46,17 @@ input#searchButton{
     border:none;
     border-radius:5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+}
+
+.humidity, .windSpeed{
+    text-align:right;
+}
+
+
+
+#icon {
+    height:200px;
+    width:200px;
+    position:relative;
+    top:-70px;
 }
