@@ -45,7 +45,7 @@ function formatDay(timestamp){
     let days = ["Sun", "Mon", "Tue", "Wed","Thur","Fri","Sat"]
 
     return (
-       <div> ${days[day]}</div>
+       <div>${days[day]}</div>
     );
       }
 

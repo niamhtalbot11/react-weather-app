@@ -1,3 +1,4 @@
+import "./style.css" ;
 import React  from "react";
 import axios from "axios";
 
@@ -7,8 +8,8 @@ export default function SearchEngine() {
     document.querySelector(".city").innerHTML = response.data.name;
     let temperature = Math.round(response.data.main.temp);
     document.querySelector(
-      ".temperature"
-    ).innerHTML = ` ${temperature}°C `;
+      "#temperature"
+    ).innerHTML = ` ${temperature}`;
     let description = response.data.weather[0].description;
     document.querySelector(
       ".description"
